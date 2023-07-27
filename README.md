@@ -25,4 +25,6 @@ https://github.com/acheong08/ChatGPT-lite.git
 
 ![pic](https://github.com/rayy2002/VoiceChat-GPT/assets/88958861/929c1cc8-5bc1-4867-9504-f47e84089e8d)
 
+https://github.com/rayy2002/VoiceChat-GPT/assets/88958861/7a238c68-a68d-46d0-b115-9b6fd1800c57
+
 
