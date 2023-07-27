@@ -6,37 +6,29 @@ import time
 import speech_recognition as sr
 import pyttsx3
 import numpy as np
-# from os.path import join, dirname
-# import matplotlib.pyplot as plt
-# ^ matplotlib is great for visualising data and for testing purposes but usually not needed for production
 
-#load_dotenv()
-openai.api_key = "pk-LyrweYxSaaVUgpNnYQzvOBmhBMFotDDlGeduvBBLGRvvkDvY"
+
+openai.api_key = "YOUR API KEY"
 openai.api_base = 'https://api.pawan.krd/v1'
 model = 'gpt-3.5-turbo'
+
 # Set up the speech recognition and text-to-speech engines
 r = sr.Recognizer()
 engine = pyttsx3.init()
 voice = engine.getProperty('voices')
 engine.setProperty('voice' , 'english-us')
-#engine.setProperty('voice', voice.id)
-name = "YOUR NAME HERE"
-greetings = [f"whats up master {name}", 
-             "yeah?", 
-             "Well, hello there, Master of Puns and Jokes - how's it going today?",
-             f"Ahoy there, Captain {name}! How's the ship sailing?",
-             f"Bonjour, Monsieur {name}! Comment ça va? Wait, why the hell am I speaking French?" ]
+
 
 # Listen for the wake word "hey pos"
 def listen_for_wake_word(source):
-    print("Listening...")
+    # print("Listening...")
     engine.say("Listening")
     engine.runAndWait()
 
     while True:
         audio = r.listen(source)
         try:
-            print('SAY')
+            # print('SAY')
             text = r.recognize_google(audio)
             print(text)
             if "wake up GPT" or "I have another question" in text.lower():
@@ -50,7 +42,7 @@ def listen_for_wake_word(source):
 
 # Listen for input and respond with OpenAI API
 def listen_and_respond(source):
-    print("Listening...")
+    # print("Listening...")
 
     while True:
         audio = r.listen(source)
