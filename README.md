@@ -10,7 +10,7 @@ Raspberry Pi: A Raspberry Pi serves as the brain of the "VoiceChat GPT" device. 
 Monospeaker: The monospeaker, paired with the Raspberry Pi via Bluetooth, functions as both the audio input and output device. Users interact with the "VoiceChat GPT" device by speaking their questions to the monospeaker, which captures the audio and sends it to the Raspberry Pi for processing.
 
 ## Work Flow
-First User inut is captured via BT monospeaker
+First User input is captured via BT monospeaker
 
 After capturing the user's voice input and converting it to text, the text is sent for processing using an unofficial API to interact with ChatGPT. This custom API allows the "VoiceChat GPT" device to leverage the power of ChatGPT's language model capabilities. The unofficial API takes the user's text query as input and sends it to ChatGPT, where the language model processes the text and generates a response.
 
