@@ -23,5 +23,6 @@ https://github.com/acheong08/ChatGPT-lite.git
 
 ## Demo
 
-Insert gif or link to demo
+![pic](https://github.com/rayy2002/VoiceChat-GPT/assets/88958861/929c1cc8-5bc1-4867-9504-f47e84089e8d)
+
 
